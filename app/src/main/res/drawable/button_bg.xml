@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- oval_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Oval background color -->
+    <solid android:color="#FFFF" />
+
+    <!-- Oval stroke (border) -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/pink" />
+    <!-- Custom radius for the oval -->
+    <corners android:radius="5dp" />
+</shape>

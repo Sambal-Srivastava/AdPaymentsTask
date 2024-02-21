@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:hint="@string/alias"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:hint="@string/name"/>
+
+    <EditText
+        android:id="@+id/editPrivacyUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:hint="@string/privacy_url"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading">
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:text="@string/add"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/button_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:text="@string/close"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+</LinearLayout>
